@@ -40,7 +40,7 @@ then
 else
   echo "No version type (https://semver.org) or incorrect type specified, try -v [major, minor, patch]"
   exit 1
-elif
+fi
 
 #create new tag
 NEW_TAG="$VNUM1.$VNUM2.$VNUM3"
