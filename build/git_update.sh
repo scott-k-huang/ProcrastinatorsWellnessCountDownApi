@@ -32,7 +32,6 @@ VNUM3=${CURRENT_VERSION_PARTS[2]}
 if [[ $VERSION == 'major' ]]
 then
   VNUM1=v$((VNUM1+1))
-  echo "Major $VNUM1"
 elif [[ $VERSION == 'minor' ]]
 then
   VNUM2=$((VNUM2+1))
@@ -45,6 +44,10 @@ else
   echo "No version type (https://semver.org) or incorrect type specified, try -v [major, minor, patch]"
   exit 1
 fi
+
+echo "Major $VNUM1"
+echo "Minor $VNUM2"
+echo "Patch $VNUM3"
 
 #create new tag
 NEW_TAG="$VNUM1.$VNUM2.$VNUM3"
