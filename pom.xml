@@ -13,7 +13,8 @@
     <maven.compiler.source>${java.version}</maven.compiler.source>
     <maven.compiler.target>${java.version}</maven.compiler.target>
     <maven.compiler.release>${java.version}</maven.compiler.release>
-    <spring.boot.version>3.5.3</spring.boot.version>
+    <spring.boot.version>3.5.5</spring.boot.version>
+    <javatuples.version>1.2</javatuples.version>
     <start-class>com.procrastinatorswellnesscountdown.App</start-class>
   </properties>
 
@@ -34,6 +35,11 @@
       <artifactId>spring-boot-starter-test</artifactId>
       <version>${spring.boot.version}</version>
       <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.javatuples</groupId>
+      <artifactId>javatuples</artifactId>
+      <version>${javatuples.version}</version>
     </dependency>
   </dependencies>
 
