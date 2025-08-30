@@ -15,6 +15,7 @@
     <maven.compiler.release>${java.version}</maven.compiler.release>
     <spring.boot.version>3.5.5</spring.boot.version>
     <javatuples.version>1.2</javatuples.version>
+    <springdoc.version>2.8.11</springdoc.version>
     <start-class>com.procrastinatorswellnesscountdown.App</start-class>
   </properties>
 
@@ -41,6 +42,11 @@
       <artifactId>javatuples</artifactId>
       <version>${javatuples.version}</version>
     </dependency>
+    <dependency>
+      <groupId>org.springdoc</groupId>
+      <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+      <version>${springdoc.version}</version>
+    </dependency>
   </dependencies>
 
   <build>
@@ -48,6 +54,7 @@
       <plugin>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-maven-plugin</artifactId>
+        <version>${spring.boot.version}</version>
         <executions>
           <execution>
             <goals>
