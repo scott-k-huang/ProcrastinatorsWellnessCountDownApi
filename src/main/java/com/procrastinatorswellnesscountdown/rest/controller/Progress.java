@@ -10,6 +10,7 @@ import java.time.temporal.ChronoField;
 import java.util.UUID;
 
 @RestController
+@CrossOrigin
 public class Progress {
     @GetMapping("/progress/{weekOfYear}/{catId}")
     CategoryProgressResponse getCatProgress(@PathVariable("weekOfYear")Integer weekOfYear, @PathVariable("catId") String catId){
